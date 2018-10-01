@@ -1,0 +1,35 @@
+.recording-button {
+  height: 100%;
+  padding: 10px;
+  margin: 0 1px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  font-size: 18px;
+  color: #F44336;
+
+  span {
+    width: 24px;
+    height: 24px;
+    text-align: center;
+  }
+
+  &:not(.disabled):hover {
+    background-color: #c4c4c4;
+  }
+
+  &.active {
+    color: white;
+    background-color: #F44336;
+    &:not(.disabled):hover {
+      background-color: #FF0000;
+    }
+  }
+
+  &.disabled {
+    color: #616161;
+    background-color: inherit;
+    cursor: wait;
+  }
+}
